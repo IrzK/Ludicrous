@@ -58,7 +58,7 @@ export default function Home({ detail, populars, sessions, upComing }) {
 
   useEffect(() => {
     const getSchedule = async () => {
-      const res = await fetch(`https://ruka.moopa.live/api/schedules`);
+      const res = await fetch(`https://consumet-api-vrwg.onrender.com/`);
       const data = await res.json();
       setSchedules(data);
     };
